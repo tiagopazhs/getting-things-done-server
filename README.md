@@ -61,13 +61,13 @@ For more details about business rules, see: https://github.com/tiagopazhs/gettin
 Clone the repository to your machine with the following command:
 
 ```ruby
-git@github.com:tiagopazhs/getting-things-done-client.git
+git@github.com:tiagopazhs/getting-things-done-server.git
 ```
 
 Navigate to the root folder:
 
 ```bash
-$ cd getting-things-done-client
+$ cd getting-things-done-server
 ```
 
 And then install the packages running:
@@ -76,12 +76,18 @@ And then install the packages running:
 $ npm install
 ```
 
+Run database migrations:
+
+```bash
+$ npx sequelize-cli db:migrate
+```
+
 ## Usage
 
 If your are not in the root folder, navigate to there using:
 
 ```bash
-$ cd getting-things-done-client
+$ cd getting-things-done-server
 ```
 
 Run the project:
@@ -92,7 +98,7 @@ $ npm run dev
 
 Open your browser in the following path:
 
-http://localhost:5173/
+http://localhost:8022/
 
 
 ## Contributing
