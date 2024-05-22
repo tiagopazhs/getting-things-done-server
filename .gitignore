@@ -2,3 +2,4 @@
 .env
 src/models/**.js
 src/**.js
+src/**.swp
