@@ -1,10 +1,22 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+import { ActionsController } from '../controllers'
 
 const router = Router();
 
-router.get('/', (_req: Request, res: Response) => {
-    return res.send('router is running');
-});
+// CRUD Operations
+// Create a new action
+router.post('/', ActionsController.create);
 
+// Read all actions
+router.get('/', ActionsController.getAll);
+
+// Read action by ID
+router.get('/:id', ActionsController.getById);
+
+// Update action by ID
+router.put('/:id', ActionsController.update);
+
+// Delete action by ID
+router.delete('/:id', ActionsController.delete);
 
 export default router;
