@@ -9,9 +9,10 @@ dotenv.config();
 const app = express();
 
 app.use(cors());
+app.use(express.json())
 
 app.get('/ping', (_req: Request, res: Response) => {
-    return res.send('pong 🏓')
+    return res.send('pong 🏓');
 })
 
 app.use('/actions', ActionsRouter);
