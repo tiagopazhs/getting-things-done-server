@@ -42,6 +42,11 @@ class ActionsController {
         }
     }
 
+    // Read all tasks from an action by ID
+    async getTasksById(req: Request, res: Response): Promise<Response> {
+        return res.status(200).json({ message: "To do" });
+    }
+
     // Update action by ID
     async update(req: Request, res: Response): Promise<Response> {
         try {

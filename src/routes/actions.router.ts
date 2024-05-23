@@ -13,6 +13,9 @@ router.get('/', ActionsController.getAll);
 // Read action by ID
 router.get('/:id', ActionsController.getById);
 
+// Read all tasks from an action by ID
+router.get('/:id/tasks', ActionsController.getTasksById);
+
 // Update action by ID
 router.put('/:id', ActionsController.update);
 
