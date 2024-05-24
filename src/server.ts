@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import express from 'express';
 import cors from 'cors'
-import { ActionsRouter } from './routes';
+import { ActionsRouter, TasksRouter } from './routes';
 
 import * as dotenv from 'dotenv';
 dotenv.config();
@@ -16,6 +16,8 @@ app.get('/ping', (_req: Request, res: Response) => {
 })
 
 app.use('/actions', ActionsRouter);
+
+app.use('/tasks', TasksRouter);
 
 const PORT = process.env.PORT || 8022;
 app.listen(PORT, () => {

@@ -1,3 +1,4 @@
 import ActionsRouter from './actions.router';
+import TasksRouter from './tasks.router';
 
-export { ActionsRouter };
+export { ActionsRouter, TasksRouter };
