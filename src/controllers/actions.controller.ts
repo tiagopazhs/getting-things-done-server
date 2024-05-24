@@ -85,6 +85,12 @@ class ActionsController {
     async delete(req: Request, res: Response) {
         try {
             const { id } = req.params;
+            const tasksById = await TaskModel.findAll({
+                where: { actionId: id },
+            });
+            if (tasksById?.length != 0) {
+                return res.status(404).json({ error: "Cannot delete a project with associated tasks" });
+            }
             const deletedAction = await ActionModel.destroy({ where: { id } });
             if (!deletedAction) {
                 return res.status(404).json({ message: "Action not found" });
