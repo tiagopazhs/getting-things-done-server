@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { TaskModel } from "../models";
+import { TaskModel, ActionModel } from "../models";
 
 class TasksController {
 
@@ -8,8 +8,11 @@ class TasksController {
     async create(req: Request, res: Response) {
         try {
             const { name, actionId } = req.body;
+            const currentAction = await ActionModel.findByPk(actionId);
+            if (!currentAction) {
+                return res.status(404).json({ message: "ActionId doesn't correspond to any actions" });
+            }
             const createdTask = await TaskModel.create({ name, actionId, status: 'open' });
-            // Todo: Create a validation of existing actions here
             res.status(201).json(createdTask);
         } catch (error) {
             console.error(error);
