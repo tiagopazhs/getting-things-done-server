@@ -28,13 +28,13 @@ See more on: https://gettingthingsdone.com/
 #### v1.0.0
 
 - [Enviroment variables are not setting from process.env bug](https://github.com/tiagopazhs/getting-things-done-server/issues/11)
-- [Read-me v1.0.0 documentation](https://github.com/tiagopazhs/getting-things-done-server/issues/8)
-- [Crud of tasks](https://github.com/tiagopazhs/getting-things-done-server/issues/5)
-- [Crud of actions](https://github.com/tiagopazhs/getting-things-done-server/issues/4)
-- [prerequisites v1.0.0 documentation](https://github.com/tiagopazhs/getting-things-done-server/issues/3)
-- [back-end planning documentation](https://github.com/tiagopazhs/getting-things-done-server/issues/1)
-- [Setup API creating a ping pong route](https://github.com/tiagopazhs/getting-things-done-server/issues/7)
-- [PostgreSQL setup](https://github.com/tiagopazhs/getting-things-done-server/issues/6)
+- [Read-me v1.0.0 documentation](https://github.com/tiagopazhs/getting-things-done-server/issues/8) - done
+- [Crud of tasks](https://github.com/tiagopazhs/getting-things-done-server/issues/5) - done
+- [Crud of actions](https://github.com/tiagopazhs/getting-things-done-server/issues/4) - done
+- [prerequisites v1.0.0 documentation](https://github.com/tiagopazhs/getting-things-done-server/issues/3) - done
+- [back-end planning documentation](https://github.com/tiagopazhs/getting-things-done-server/issues/1) - done
+- [Setup API creating a ping pong route](https://github.com/tiagopazhs/getting-things-done-server/issues/7) - done
+- [PostgreSQL setup](https://github.com/tiagopazhs/getting-things-done-server/issues/6) - done
 - [modeling Action and Task collections documentation](https://github.com/tiagopazhs/getting-things-done-server/issues/2)
 
 
