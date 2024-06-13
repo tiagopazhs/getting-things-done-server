@@ -1,6 +1,6 @@
 # Getting things done - Backend
 
-This is the front-end of Getting things done.
+This is the back of Getting things done.
 A project based in the book "The art of stress-free productivity" that is the method GTD of David Allen to personal productivity methodology that redefines how we approach our life and work.
 
 ![71B4ln9+X+L _SY466_](https://github.com/tiagopazhs/getting-things-done-client/assets/81580990/20eb368c-dfc4-4163-8440-5a898d8869bc)
